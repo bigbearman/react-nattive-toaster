@@ -1,5 +1,5 @@
 {
-  "name": "react-native-toaster",
+  "name": "react-native-toaster-ui",
   "version": "1.0.0",
   "description": "A reusable toast notification module for React Native",
   "main": "dist/index.js",
