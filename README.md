@@ -2,19 +2,6 @@
 
 A lightweight, customizable toast notification system for React Native applications.
 
-
-
-
-## Installation
-
-Install my-project with npm
-
-```bash
-    npm install react-native-toaster
-    or
-    yarn add react-native-toaster
-```
-    
 ## Features
 
 - 🎨 Multiple toast variants (default, success, error, warning, info)
@@ -23,6 +10,47 @@ Install my-project with npm
 - 🧩 Simple API with React hooks
 - 📱 Fully compatible with React Native
 
+## Installation
+
+```bash
+npm install react-native-toaster-ui
+# or
+yarn add react-native-toaster-ui
+```
+
+### Optional Dependencies
+
+This package can use `lucide-react-native` for icons, but it's optional:
+
+```bash
+npm install lucide-react-native
+# or
+yarn add lucide-react-native
+```
+
+If you're using React 19 with React Native 0.78.0 or newer, you may need to install with the `--force` flag due to compatibility issues with some versions of lucide-react-native:
+
+```bash
+npm install lucide-react-native --force
+# or
+yarn add lucide-react-native --force
+```
+
+## Usage
+
+### 1. Wrap your app with the ToastProvider
+
+```jsx
+import { ToastProvider } from 'react-native-toaster-ui';
+
+export default function App() {
+  return (
+    <ToastProvider>
+      {/* Your app content */}
+    </ToastProvider>
+  );
+}
+```
 
 ## Customization
 
